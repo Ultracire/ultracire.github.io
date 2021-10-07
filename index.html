@@ -1,0 +1,330 @@
+<style>
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+ --blue: #45567d;
+  --main-gray: #303841;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;400&display=swap');
+
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+body {
+ margin: 0;
+ margin-bottom: 40px;
+ font-family: Noto Sans Display, sans-serif;
+}
+
+
+
+#navbar {
+  display: flex;
+   position: fixed;
+  justify-content: flex-end;
+  positon: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--blue);
+  z-index: 10;
+}
+.nav-list {
+  display: flex;
+  padding: 5px;
+  margin-right: 1.8rem;
+  list-style: none;
+}
+.nav-list a {
+  display: block;
+  font-size: 2rem;
+  padding: 0.85rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#welcome-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  width: 100%;
+  height: 100vh;
+  max-width: 1380px;
+  margin: 10px auto;
+  align-items: center;
+  padding: 100px 0;
+  justify-content: center;
+}
+@media (max-width: 1100px) {
+#welcomemsc{
+position: absolute;
+ max-width: 80%;
+  height: 800px;
+ margin-right: 20em;
+  }
+  }
+
+.welcomemsc {
+  padding: 24px;
+  
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    text-align: center;}
+  }
+
+
+#name {
+  font-size: 6rem;
+  margin: 30px auto;
+  text-align: center;
+  font-color: #303841
+}
+#catz {
+display: block;
+  justify-content: center;
+  margin: 50px auto;
+  bottom: 1000px;
+  height: 600px;
+ 
+}
+
+
+
+.bio {
+   position: relative;
+  font-size: 28px;
+  text-align: left;
+}
+
+/* Projects section */
+
+.projects-section {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: var(--main-);
+  
+}
+
+.projects-section-header {
+  max-width: 640px;
+  font-size: 2.5rem;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--blue);
+}
+
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.project-title {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  height: 30px;
+  margin-bottom: 7rem;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+}
+
+.btn-show-all:hover {
+  background: var(--main-red);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+#contact {
+  margin-top: -5rem;
+  margin-bottom: 7rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+
+</style>
+<html>
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<!-- START NAV -->
+<nav id="navbar"> 
+<ul class="nav-list">
+  <li>
+  <a class="nav-link" href="#welcome-section">Welcome</a>
+  </li>
+  <li>
+    <a class="nav-link" href="#projects">Projects</a>
+  </li>
+  <li>
+    <a class="nav-link" href="#contact">Contact</a>
+  </li>
+  </ul>
+</nav>
+<!-- END NAV -->
+
+
+<section id="welcome-section"> 
+
+ <div class="welcomemsc"> <h1 id="name">Eric Phan</h1>
+  <p class="bio">UC Irvine almnus and pharmacy student turned software engineering learner. I am interested in the field of data science and am working diligently to aquire the knowledge and skill necessary to transition into this industry.</p>
+  <p class="bio">I am a cryptocurrency enthusiast, basketball geek, and enjoy hearing people talk about their passions. Eager to learn and excited to meet like-minded people who will bring out the best in me.</p>
+   
+   </div>
+   <img id="catz"class="catphoto" src="https://lh3.googleusercontent.com/hrX8f52evmZYnTzNkS4pL43oMzzIBe36LP7vjiue3BJMN-do2CJrqcksOGHyHIfYHo16U2De7hTEqltlqg8sr5PS7piYSCQQnvMx7p-dSVqV7pJThnp7NZEzVhhO0yddJjl5AZbNZU1_VWqZE-KdCQ4H-p5JbOmcpa8O4d4JoSMpqKduj0sdnFa7v8K2RJroJHnSgypTplopFbo85RNt_MrCxqznYzLDf5PPs9M3c98wQ6SqBYs5LBUovTbj2sY-ABweMo1RlWwk7RFvw7lKO5RIfJUdoe1GHJ3oE9X2Hjs07hF8mRAyfTo220gP1kWvjQB-HD5BKFFbsESX3e0j8J3e-7OBsHjlc78x1ujeWKwoEsDfu0TKri8sgKrynm2VROUiBPqiqD8cAvXJmDtGV7_bNYqHB50XSp3XZxKOmJvyyrBMOhs1AG_o_dPEqwdc27stzL1xUAwnAb_ONgWyl6HP1jT_tsDcYstiY5sW2v5cIBkG3ikTNnNfJ6rixtPT1a6TbhuIAuz5m0d102q2Kd7hFfPX_st-GJtZ-kpbXe9ekAkkmzo7BC8SQcahnAwphxVBkwaeFPzMhtRMmv5U8TGrcwr7nITUE-aTPftqMRZ-HdA0TWCDxMRjG1pc4HhE08eVGmLdufOo5FPfY2yCc8uyU9vGuWmFonsERIuPQONBJHbY0oDEkp2J_dtEn4YkSMaHP7ICm5D5cn0WNzAycGg=w727-h969-no?authuser=0" alt="catphoto"> </img>
+  
+
+  </section>
+
+
+
+<!-- projects -->
+
+<section id="projects" class="projects-section"> 
+  <h2 class="projects-section-header">Here are some of my projects!</h2>
+   
+  <div class="projects-grid">
+    <a href="https://codepen.io/ultracire/pen/MWoYaoj"
+      target="_blank"
+      class="project-tile"
+    >
+      <img
+        class="project-image"
+  src="https://gdurl.com/t4QO"
+        alt="project">
+      </img>   
+    <p class="project-title">
+      Tribute Page </p>
+    </a>
+  
+      <a href="https://codepen.io/ultracire/pen/abwpdOX"
+      target="_blank"
+      class="project-tile"
+    >
+      <img
+        class="project-image"
+  src="https://gdurl.com/PsyC"
+        alt="project">
+      </img>   
+    <p class="project-title">
+      Ping Pong Tournament Signup Form </p>
+    </a>
+
+   <a href="https://codepen.io/ultracire/pen/qBjMyaO"
+      target="_blank"
+      class="project-tile"
+    >
+      <img
+        class="project-image"
+  src="https://gdurl.com/5Hyb"
+        alt="project">
+      </img>   
+    <p class="project-title">
+     Cardano Technical Documentation Page</p>
+    </a>
+
+  <a href="https://codepen.io/ultracire/pen/bGRWyER"
+      target="_blank"
+      class="project-tile"
+    >
+      <img
+        class="project-image"
+  src="https://gdurl.com/7bEA"
+        alt="project">
+      </img>   
+    <p class="project-title">
+     Fictional Product Landing Page</p>
+    </a>
+  </div>
+  </section>
+
+<section id="contact"> 
+  <h1>Let's link up!</h1>
+  <div class="contact-links"> 
+   <a id="profile-link" href="https://github.com/Ultracire"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-github"></i> GitHub</a
+    >
+   <a
+      href="https://facebook.com/freecodecamp"
+      target="_blank"
+      class="btn contact-details"
+      >
+    <i class="fab fa-linkedin"></i> Linkedin</a>
+     <a href="mailto:example@example.com" class="btn contact-details"
+      ><i class="fas fa-at"></i> Mail</a
+    >
+  </div>
+  
+  </section>
+
+<!-- links
+https://gdurl.com/t4QO kobe
+-->
+</html>
